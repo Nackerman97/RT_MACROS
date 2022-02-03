@@ -3,9 +3,9 @@ Option Explicit
 Option Compare Text
 Option Private Module
 
-Const ConstStrAccess As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=K:\AA\BILLING\PreAudit.mdb;Persist Security Info=False;"
-Const ConstStrDB2P As String = "Provider=MSDASQL.1;Persist Security Info=True;Extended Properties=DSN=DB2P;UID=RTODA02;PWD=;"
-Private Const ConstStrTeraData As String = "Driver=Teradata;DBCName=tqdpr02;Database=dw_dss;Uid=USERNAME;Pwd=PASSWORD;"
+Const ConstStrAccess As String = "CONNECTION INPUT NEEDED"
+Const ConstStrDB2P As String = "CONNECTION INPUT NEEDED"
+Private Const ConstStrTeraData As String = "CONNECTION INPUT NEEDED"
 
 Public Enum databaseLocal
     CORRESPONDENCE
@@ -14,8 +14,8 @@ End Enum
 
 Private Function getLocalDatabseString(DB As databaseLocal) As String
     Select Case DB
-        Case CORRESPONDENCE: getLocalDatabseString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=K:\AA\BILLING\Correspondence\BILLING_CORRESPONDENCE.mdb;Persist Security Info=False;"
-        Case Preaudit: getLocalDatabseString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=K:\AA\billing\PreAudit.mdb;Persist Security Info=False;"
+        Case CORRESPONDENCE: getLocalDatabseString = "CONNECTION INPUT NEEDED"
+        Case Preaudit: getLocalDatabseString = "CONNECTION INPUT NEEDED"
     End Select
 End Function
 
@@ -43,7 +43,7 @@ Application.StatusBar = "Login to continue"
     
 Application.StatusBar = "Creating Connection String"
     Dim connectionString As String
-    connectionString = StringInterpolation("Driver=Teradata;DBCName=tqdpr02;Database=dw_dss;Uid=${0};Pwd=${1};", Username, Password)
+    connectionString = StringInterpolation("CONNECTION INPUT NEEDED", Username, Password)
     
     'OPEN CONNECTION TO DATABASE
     Dim conn As ADODB.connection

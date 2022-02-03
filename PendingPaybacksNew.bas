@@ -2,7 +2,7 @@ Attribute VB_Name = "PendingPaybacksNew"
 Option Explicit
 
 'MAIN DATABASE
-Private Const CorrespondenceConnectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=K:\AA\BILLING\Correspondence\BILLING_CORRESPONDENCE.mdb;Persist Security Info=False;"
+Private Const CorrespondenceConnectionString As String = "CONNECTION INPUT NEEDED"
 'TESTING DATABASE
 'Private Const CorrespondenceConnectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nacke08\OneDrive - Safeway, Inc\Documents\Projects\BILLING_CORRESPONDENCE_BACKUP_01_14_22.mdb;Persist Security Info=False;"
 'COVER_SHEET FILEPATH

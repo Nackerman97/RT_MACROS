@@ -5,7 +5,7 @@ Option Compare Text
 Public MouseStart
 Public LastMoved
 
-'@AUTHOR: ROBERT TODAR
+'@AUTHOR: ROBERT TODAR & Nicholas Ackerman
 
 'DEPENDENCIES
 ' -
